@@ -54,9 +54,20 @@ article {
   position: relative;
 }
 
+.header__moth {
+  margin-bottom: -400px;
+  margin-top: -300px;
+  max-height: 100%;
+  width: auto;
+}
+
 .header__logo {
   width: 100%;
   height: auto;
+  position: relative;
+  z-index: 2;
+  -webkit-filter: drop-shadow(8px 8px 0 black) drop-shadow(0px 4px 0 black);
+  filter: drop-shadow(8px 8px 0 black) drop-shadow(0px 4px 0 black);
 }
 
 .website-nav ul {

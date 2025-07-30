@@ -71,13 +71,12 @@ article {
   font-weight: 700;
 }
 
-.music-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+.music-columns {
+  display: flex;
+  justify-content: center;
 }
 
-.music-grid iframe {
+.music-columns iframe {
   max-width: 100%;
 }
 

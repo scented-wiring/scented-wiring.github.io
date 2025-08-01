@@ -89,6 +89,10 @@ article {
   filter: drop-shadow(8px 8px 0 black) drop-shadow(0px 4px 0 black);
 }
 
+.gallery-swiper.swiper {
+  margin-top: 40px;
+}
+
 .gallery-image {
   width: 100%;
   height: auto;

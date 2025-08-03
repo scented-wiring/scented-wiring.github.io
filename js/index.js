@@ -92,14 +92,3 @@ particlesJS("particles-js", {
   },
   retina_detect: true,
 });
-
-  const gallerySlider = new Swiper(".gallery-swiper.swiper", {
-    spaceBetween: 0,
-    slidesPerView: 1,
-    speed: 2000,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    }
-  });

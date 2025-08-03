@@ -45,17 +45,35 @@ h2 {
 
 blockquote {
   font-style: italic;
-  font-size: 20px;
-  margin-left: 0;
+  margin: 0 0 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li::before {
+  position: absolute;
+  left: -32px;
+  top: 0;
+  height: 32px;
+  width: 32px;
+  content: url("../images/bullet-icon.png");
 }
 
 p,
+ul li,
 blockquote cite {
   font-size: 1.2rem;
 }
 
 blockquote p {
-  margin: 0;
+  margin: 0 0 1rem;
+  font-size: 2rem;
 }
 
 /* Layout */

@@ -74,11 +74,13 @@ p,
 ul li,
 blockquote cite {
   font-size: 1.2rem;
+  font-style: normal;
 }
 
 blockquote p {
   margin: 0 0 1rem;
-  font-size: 2rem;
+  font-size: 1.75rem;
+  font-style: italic;
 }
 
 /* Layout */

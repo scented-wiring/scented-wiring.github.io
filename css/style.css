@@ -139,6 +139,7 @@ article {
 .article-inner {
   max-width: 1000px;
   margin: 0 auto;
+  padding-top: 20px;
 }
 
 .article-inner__section {
@@ -197,6 +198,21 @@ nav.social-links {
   display: flex;
   gap: 20px;
   justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+  nav.social-links {
+    padding: 10px 0;
+  }
+
+  nav.social-links li {
+    max-width: 10%;
+  }
+
+  nav.social-links li img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 /* Particles */

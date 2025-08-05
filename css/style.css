@@ -95,7 +95,7 @@ header {
 
 article {
   background-color: #fff;
-  padding: 60px 20px;
+  padding: 40px 20px 60px;
   margin-top: 100vh;
   position: relative;
   z-index: 2;
@@ -160,19 +160,43 @@ article {
   list-style: none;
 }
 
+@media only screen and (max-width: 900px) {
+  .website-nav ul {
+    background-color: #000;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header,
+  .header__logo-wrapper {
+    height: 550px;
+  }
+
+  article {
+    margin-top: 550px;
+  }
+}
+
 .website-nav__link a {
   color: #fff;
   font-size: 1.2rem;
   font-weight: 700;
+  filter: drop-shadow(8px 8px 0 black) drop-shadow(0px 4px 0 black);
 }
 
-.music-columns {
+nav.social-links {
+  background-color: #fff;
+  position: sticky;
+  height: 100%;
+  top: 0px;
+  padding: 20px 0px;
+}
+
+.social-links ul {
   display: flex;
+  gap: 20px;
   justify-content: center;
-}
-
-.music-columns iframe {
-  max-width: 100%;
 }
 
 /* Particles */

@@ -102,7 +102,7 @@ article {
 }
 
 .content-wrapper {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -137,7 +137,7 @@ article {
 }
 
 .article-inner {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   padding-top: 20px;
 }

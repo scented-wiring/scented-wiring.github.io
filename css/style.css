@@ -196,7 +196,7 @@ nav.social-links {
   position: sticky;
   height: 100%;
   top: 0px;
-  padding: 20px 0px;
+  padding: 20px 0px 20px 0;
 }
 
 nav.social-links ul {

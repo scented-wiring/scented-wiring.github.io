@@ -79,7 +79,7 @@ blockquote cite {
 
 blockquote p {
   margin: 0 0 1rem;
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   font-style: italic;
 }
 
@@ -161,24 +161,6 @@ article {
   list-style: none;
 }
 
-@media only screen and (max-width: 900px) {
-  .website-nav ul {
-    background-color: #000;
-    padding: 10px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  header,
-  .header__logo-wrapper {
-    height: 550px;
-  }
-
-  article {
-    margin-top: 550px;
-  }
-}
-
 .website-nav__link a {
   color: #fff;
   font-size: 1.2rem;
@@ -200,6 +182,48 @@ nav.social-links {
   justify-content: center;
 }
 
+/* Particles */
+
+.particles-js-canvas-el {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 900px) {
+  .website-nav ul {
+    background-color: #000;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header,
+  .header__logo-wrapper {
+    height: 550px;
+  }
+
+  article {
+    margin-top: 550px;
+  }
+
+  p,
+  ul li,
+  blockquote cite {
+    font-size: 1rem;
+  }
+
+  blockquote p {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .header__moth {
+    margin-bottom: -110px;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   nav.social-links {
     padding: 10px 0;
@@ -213,12 +237,4 @@ nav.social-links {
     max-width: 100%;
     height: auto;
   }
-}
-
-/* Particles */
-
-.particles-js-canvas-el {
-  position: fixed;
-  top: 0;
-  z-index: 1;
 }

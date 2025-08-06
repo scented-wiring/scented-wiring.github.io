@@ -14,8 +14,8 @@ body {
 :target::before {
   content: "";
   display: block;
-  height: 50px;
-  margin: -50px 0 0;
+  height: 100px;
+  margin: -100px 0 0;
 }
 
 /* Typography */
@@ -157,7 +157,7 @@ article {
 
 .website-nav ul {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   list-style: none;
 }
 
@@ -168,6 +168,29 @@ article {
   filter: drop-shadow(8px 8px 0 black) drop-shadow(0px 4px 0 black);
 }
 
+.copy-email-wrapper {
+  position: relative;
+}
+
+.copy-email-wrapper #copy-email-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.copy-email-wrapper #copy-message {
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: max-content;
+  padding: 5px;
+  font-size: 1rem;
+}
+
 nav.social-links {
   background-color: #fff;
   position: sticky;
@@ -176,10 +199,14 @@ nav.social-links {
   padding: 20px 0px;
 }
 
-.social-links ul {
+nav.social-links ul {
   display: flex;
   gap: 20px;
   justify-content: center;
+}
+
+nav.social-links li {
+  cursor: pointer;
 }
 
 /* Particles */

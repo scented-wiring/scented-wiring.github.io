@@ -20,13 +20,15 @@
           width="2000"
           height="992"
         />
-        <img
-          src="./images/MB_Logo__Horizontal__white-cropped.png"
-          alt="mothbreather-logo"
-          class="header__logo"
-          width="1617"
-          height="700"
-        />
+        <a href="#bio">
+          <img
+            src="./images/MB_Logo__Horizontal__white-cropped.png"
+            alt="mothbreather-logo"
+            class="header__logo"
+            width="1617"
+            height="700"
+          />
+        </a>
         <nav class="website-nav">
           <ul class="no-list">
             <li class="website-nav__link"><a href="#bio">Bio</a></li>
@@ -34,9 +36,16 @@
             <li class="website-nav__link"><a href="#gigs">Gigs</a></li>
             <li class="website-nav__link">
               <a
-                href="https://mothbreather.bandcamp.com/album/the-fun-never-starts"
+                href="https://mothbreather.bandcamp.com"
                 target="_blank"
                 >Music</a
+              >
+            </li>
+            <li class="website-nav__link">
+              <a
+                href="https://mothbreather.bandcamp.com/merch"
+                target="_blank"
+                >Merch</a
               >
             </li>
           </ul>
@@ -96,13 +105,18 @@
                     width="42"
                 /></a>
               </li>
-              <li>
+              <li class="copy-email-wrapper">
+                <button id="copy-email-btn">
                 <img
                   src="images/social/mail-icon.png"
                   alt="mail-icon"
                   height="42"
                   width="42"
                 />
+                </button>
+                <span id="copy-message" style="display: none;">
+                  Email copied to clipboard!
+                </span>
               </li>
             </ul>
           </nav>

@@ -1,3 +1,25 @@
+/* Copy to clipboad on click */
+
+document
+  .getElementById("copy-email-btn")
+  .addEventListener("click", function () {
+    const email = "mothbreather.wav@gmail.com";
+    navigator.clipboard
+      .writeText(email)
+      .then(() => {
+        const msg = document.getElementById("copy-message");
+        msg.style.display = "inline";
+        setTimeout(() => {
+          msg.style.display = "none";
+        }, 2000); // Hide after 2 seconds
+      })
+      .catch((err) => {
+        console.error("Could not copy text: ", err);
+      });
+  });
+
+/* Particles JS */
+
 particlesJS("particles-js", {
   particles: {
     number: {

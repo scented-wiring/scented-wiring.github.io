@@ -169,6 +169,7 @@ article {
   transition: 0.3s ease-in-out;
   transition-property: initial !important;
   filter: grayscale(1);
+  cursor: pointer;
 }
 
 .thumb-image.swiper-slide-thumb-active {

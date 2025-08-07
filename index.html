@@ -3,6 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mothbreather – Manchester band of genre-hoppers."
+    />
+    <meta
+      name="keywords"
+      content="Mothbreather, Manchester band, Manchester music, psychedelic rock, post-punk, alt rock, prog rock"
+    />
+    <meta name="author" content="Mothbreather" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Mothbreather – Official Website" />
+    <meta
+      property="og:description"
+      content="Mothbreather – Manchester band of genre-hoppers."
+    />
+    <meta
+      property="og:image"
+      content="https://mothbreather.com/images/gallery/Cold Garden.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://mothbreather.com" />
+    <meta property="og:type" content="website" />
     <title>Mothbreather</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
     <link rel="stylesheet" href="css/style.css" />
@@ -33,6 +56,7 @@
   </head>
 
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
       <div class="header__logo-wrapper">
         <h1>Mothbreather</h1>
@@ -52,7 +76,7 @@
             height="700"
           />
         </a>
-        <nav class="website-nav">
+        <nav class="website-nav" aria-label="Main site navigation">
           <ul class="no-list">
             <li class="website-nav__link"><a href="#bio">Bio</a></li>
             <li class="website-nav__link"><a href="#press">Press</a></li>
@@ -77,7 +101,7 @@
     <main>
       <div class="content-wrapper">
         <article>
-          <nav class="social-links">
+          <nav class="social-links" aria-label="Social link navigation">
             <ul class="no-list">
               <li>
                 <a
@@ -130,18 +154,13 @@
               <li class="copy-email-wrapper">
                 <button
                   id="copy-email-btn"
-                  style="background: none; border: none; cursor: pointer"
+                  aria-label="Copy email address to clipboard"
                 >
-                  <img
-                    src="images/social/mail-icon.png"
-                    alt="mail-icon"
-                    height="42"
-                    width="42"
-                  />
+                  <img src="images/social/mail-icon.png" alt="" />
                 </button>
-                <span id="copy-message" style="display: none">
-                  Email address copied to clipboard
-                </span>
+                <span id="copy-message" style="display: none" aria-live="polite"
+                  >Email address copied to clipboard</span
+                >
               </li>
             </ul>
           </nav>
@@ -304,5 +323,25 @@
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="./js/swiper.js"></script>
   <script src="js/index.js"></script>
-  <style src="./css/swiper.css"></style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicGroup",
+      "name": "Mothbreather",
+      "url": "https://mothbreather.com",
+      "image": "https://mothbreather.com/images/MB_Logo__Horizontal__white-cropped.png",
+      "sameAs": [
+        "https://www.youtube.com/@mothbreather.mp3",
+        "https://www.instagram.com/mothbreather",
+        "https://mothbreather.bandcamp.com"
+      ],
+      "genre": [
+        "Post-punk",
+        "Psychedelic rock",
+        "Alternative rock",
+        "Prog rock"
+      ],
+      "foundingLocation": "Manchester, UK"
+    }
+  </script>
 </html>

@@ -18,6 +18,32 @@ document
       });
   });
 
+/* Swiper JS */
+
+// Thumbnails Swiper
+const galleryThumbs = new Swiper(".gallery-thumbs", {
+  spaceBetween: 10,
+  slidesPerView: 5, // Number of thumbnails visible
+  freeMode: true,
+  watchSlidesProgress: true,
+  watchSlidesVisibility: true,
+});
+
+// Main Gallery Swiper
+const gallerySlider = new Swiper(".gallery-swiper", {
+  spaceBetween: 30,
+  slidesPerView: 1,
+  speed: 1000,
+  loop: true,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: true,
+  },
+  thumbs: {
+    swiper: galleryThumbs,
+  },
+});
+
 /* Particles JS */
 
 particlesJS("particles-js", {

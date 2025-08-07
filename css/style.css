@@ -151,8 +151,25 @@ article {
 }
 
 .gallery-image {
-  width: 100%;
-  height: auto;
+  width: 100% !important;
+  height: 600px !important;
+  object-fit: cover;
+}
+
+.gallery-thumbs {
+  margin-top: 20px;
+}
+
+.thumb-image {
+  height: 115px !important;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+  transition-property: initial !important;
+  filter: grayscale(1);
+}
+
+.thumb-image.swiper-slide-thumb-active {
+  filter: grayscale(0);
 }
 
 .website-nav ul {
@@ -197,6 +214,7 @@ nav.social-links {
   height: 100%;
   top: 0px;
   padding: 20px 0px 20px 0;
+  z-index: 2;
 }
 
 nav.social-links ul {

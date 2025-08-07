@@ -140,6 +140,9 @@ article {
   max-width: 900px;
   margin: 0 auto;
   padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .article-inner__section {

@@ -93,6 +93,10 @@ header {
   z-index: 2;
 }
 
+.skip-link {
+  visibility: hidden;
+}
+
 article {
   background-color: #fff;
   padding: 40px 20px 60px;
@@ -197,6 +201,7 @@ article {
   background: none;
   border: none;
   cursor: pointer;
+  padding: 0;
 }
 
 .copy-email-wrapper #copy-message {

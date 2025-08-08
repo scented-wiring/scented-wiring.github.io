@@ -184,6 +184,8 @@ article {
   display: flex;
   gap: 20px;
   list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .website-nav__link a {
@@ -269,6 +271,18 @@ nav.social-links li {
 
   blockquote p {
     font-size: 1.3rem;
+  }
+
+  .website-nav__link a {
+    font-size: 1rem;
+  }
+
+  .gallery-image {
+    height: 300px !important;
+  }
+
+  .thumb-image {
+    height: 65px !important;
   }
 }
 

@@ -182,6 +182,9 @@ article {
 
 img.image-margin-top {
   margin-top: 30px;
+  max-width: 100%;
+  object-fit: contain;
+  height: auto;
 }
 
 .website-nav ul {
